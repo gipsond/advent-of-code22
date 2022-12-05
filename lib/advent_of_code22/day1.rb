@@ -25,13 +25,13 @@ module AdventOfCode22
     end
 
     def self.part_1 input
-      inventories = self.parse input
-      inventories.map {|i| i.sum }.max
+      inventories = Day1.parse input
+      inventories.map(&:sum).max
     end
 
     def self.part_2 input
-      inventories = self.parse input
-      inventories.map {|i| i.sum }.max(3).sum
+      inventories = Day1.parse input
+      inventories.map(&:sum).max(3).sum
     end
   end
 end
