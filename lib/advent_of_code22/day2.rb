@@ -151,12 +151,12 @@ module AdventOfCode22
 
     def self.part_1 input
       strategy_guide = Day2.parse input
-      strategy_guide.map {|round| Day2.score_part_1 round}.sum
+      strategy_guide.sum {|round| Day2.score_part_1 round}
     end
 
     def self.part_2 input
       strategy_guide = Day2.parse input
-      strategy_guide.map {|round| Day2.score_part_2 round}.sum
+      strategy_guide.sum {|round| Day2.score_part_2 round}
     end
   end
 end
