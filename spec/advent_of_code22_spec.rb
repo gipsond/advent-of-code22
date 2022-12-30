@@ -104,4 +104,9 @@ RSpec.describe AdventOfCode22 do
       end
     end
   end
+
+  describe described_class::Day7 do
+    it_behaves_like "a day's solution", "day7", 95437, 1315285, 24933642, 9847279
+  end
+
 end
