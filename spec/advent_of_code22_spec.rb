@@ -47,4 +47,8 @@ RSpec.describe AdventOfCode22 do
   describe described_class::Day4 do
     it_behaves_like "a day's solution", "day4", 2, 536, 4, 845
   end
+
+  describe described_class::Day5 do
+    it_behaves_like "a day's solution", "day5", "CMZ", "PTWLTDSJV", "MCD", "WZMFVGGZP"
+  end
 end
